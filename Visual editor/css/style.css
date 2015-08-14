@@ -1,0 +1,246 @@
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url("../fonts/opensans.woff") format("woff");
+}
+
+body {
+    font-size: 18px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    margin: 0px;
+    background: #F8F8F8;
+    text-align: justify;
+}
+
+p {
+    margin: 5px 0px;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0px;
+    text-align: left;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #33B77A;
+    font: normal 30px "Open Sans", Helvetica, Arial, sans-serif;
+    margin: 0px 0px 10px 0px;
+    padding: 3px 0px;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 821px) {
+    #content {
+        width: 800px;
+    }
+}
+
+#content {
+    margin: auto;
+}
+
+form {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form :invalid {
+    box-shadow: none;
+}
+
+form>p {
+    font-size: 16px;
+    margin: 5px 0px;
+}
+
+input[type="submit"],
+button,
+.actions a {
+    display: inline-block;
+    width: 60px;
+    margin: 0px 3px;
+    padding: 0px;
+    color: black;
+    background-color: palegreen;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="submit"],
+button {
+    height: 25px;
+}
+
+.actions a {
+    line-height: 25px;
+}
+
+input[type="submit"]:hover,
+button:hover,
+.actions a:hover {
+    background-color: lightgreen;
+}
+
+#addMessageForm input[type="text"] {
+    width: 100%;
+    max-width: 260px;
+    float: right;
+    font-size: 14px;
+}
+
+#addMessageForm textarea,
+#editMessageForm textarea {
+    width: 100%;
+    height: 80px;
+    font-size: 18px;
+    resize: none;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border: 1px solid lightgreen;
+    box-shadow: 0px 0px 5px lightgreen;
+}
+
+input[type="text"],
+textarea {
+    box-sizing: border-box;
+    padding: 3px;
+    margin: 0px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+#sendError {
+    color: red;
+}
+
+#messages,
+#addMessageForm {
+    margin: 0px 10px;
+}
+
+@media screen and (min-width: 421px) {
+    #messages,
+    #addMessageForm {
+        width: 400px;
+        margin: auto;
+    }
+}
+
+.message {
+    margin: 10px 0px;
+}
+
+.messageHead {
+    padding: 0px 3px;
+    margin-bottom: 0px;
+}
+
+.messageForm {
+    padding: 0px;
+    margin: 0px;
+}
+
+.messageInfo {
+    float: right;
+}
+
+.datetime {
+    font-size: 14px;
+}
+
+.messageLink {
+    font-size: 16px;
+    color: #666;
+    text-decoration: none;
+}
+
+.messageLink:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.user {
+    font-weight: bold;
+}
+
+.messageBody {
+    border: 1px solid grey;
+    border-radius: 5px;
+    background: #FBFBFB;
+    padding: 3px;
+    margin: 0px;
+}
+
+.messageText {
+    margin: 0px;
+}
+
+.messageUpdated {
+    font-size: 10px;
+    margin-bottom: 0px;
+    color: darkblue;
+}
+
+#confirmDialog {
+    text-align: center;
+}
+
+#posts {
+    margin: 0px 10px;
+}
+
+@media screen and (min-width: 621px) {
+    #posts {
+        width: 600px;
+        margin: auto;
+    }
+}
+
+.post hr {
+    margin: 30px 0px;
+}
+
+#addPostForm textarea,
+#editPostForm textarea {
+    width: 100%;
+    height: 300px;
+    resize: vertical;
+}

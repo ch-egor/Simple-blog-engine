@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Messages</title>
+    <link rel="stylesheet" href="style.css">
+	<style>
+	#editor {
+		position: relative;
+	}
+	
+	.toolbar button {
+		min-width: 30px;
+		width: auto;
+		font-weight: normal;
+	}
+	
+	.editarea, textarea {
+		border: 1px solid black;
+		border-radius: 5px;
+		margin: 5px 0px;
+		box-sizing: border-box;
+		width: 100%;
+		height: 400px;
+		outline: none;
+		background-color: white;
+		overflow-y: scroll;
+	}
+	
+	.dialogBox {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin: 0px;
+		transform: translate(-50%,-50%);
+	}
+	
+	.linkDialog {
+		padding: 20px;
+		margin: 0px;
+		background-color: whitesmoke;
+		border: 1px solid black;
+		border-radius: 5px;
+	}
+	</style>
+  </head>
+  <body>
+    <header>Simple blog</header>
+    <div id="content">
+	  <textarea id="textarea">&lt;p&gt;Your post goes here...&lt;/p&gt;</textarea>
+      <div id="editor"></div>
+	</div>
+    <footer>&copy;2015 All rights reserved</footer>
+	<script src="editor.js"></script>
+  </body>
+</html>
