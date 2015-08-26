@@ -141,7 +141,7 @@ class MyApplication extends Application {
         $pageNumber = $messages->getPageNumber(intval($this->get('page')));
         $args = array('addMessage' => $message, 
             'messages' => $messages->getByPage($pageNumber), 
-            'pageCount' => $messages->pagesCount());
+            'pagesCount' => $messages->pagesCount());
         $this->render('messages.html.php', $args);
     }
 
