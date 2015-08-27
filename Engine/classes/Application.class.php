@@ -54,6 +54,7 @@ class Application {
         if (!$this->checkAction($action))
             return false;
         $this->_defaultAction = $action;
+        return true;
     }
     
     public function render($template, $args = array(), $minify = false) {
