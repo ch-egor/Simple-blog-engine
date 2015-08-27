@@ -65,7 +65,7 @@ class View {
             return null;
         if ($lang == 'html')
             return htmlspecialchars($string, ENT_QUOTES, "UTF-8");
-        if ($lang = 'js') {
+        if ($lang == 'js') {
             $escapedString = json_encode($string);
             $length = strlen($escapedString);
             return substr($escapedString, 1, $length - 2);
